@@ -1,0 +1,608 @@
+/* ------------------------- Personal Start -------------------------*/
+/* -------------------- */
+/* personal-left
+/* -------------------- */
+.personal-left .personal-box {
+  padding: 13px;
+  background: #eeeeee;
+  border: 2px solid #eeeeee;
+  transition: border-color 400ms;
+  -webkit-transition: border-color 400ms;
+}
+.personal-left .personal-box .personal-img {
+  margin: -15px -15px 0 -15px;  	/*0 auto 0 auto; */
+}
+.personal-left .personal-box .personal-img img {
+  margin: auto; 
+}
+.personal-left .personal-box .personal-info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.personal-left .personal-box:hover {
+  border-color: #45aed6;
+}
+.personal-left .personal-box:hover .social-icons > li > a {
+  background: #45aed6;
+}
+.personal-left .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+}
+.personal-left .social-icons > li {
+  display: inline-block;
+}
+.personal-left .social-icons > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background: #222534;
+  border-radius: 3px;
+}
+/* -------------------- */
+/* personal-right
+/* -------------------- */
+.bg-white {
+	background-color: #fff;
+}
+.padding-left-30 {
+	padding-left: 30px;
+}
+.padding-right-30 {
+	padding-right: 30px;
+}
+.personal-right {
+  border:1px solid #dbdbdb;
+  padding: 40px;
+}
+.personal-right  ul {
+  	list-style: none;
+	padding-left: 0px;
+	text-align: justify;
+}
+.personal-intro h2, .experience h2, .education h2, .paper h2, .show h2 {
+	padding-bottom: 50px;
+}
+/* introduction */
+.personal-intro p {
+	font-size: 18px;
+	width: inherit;
+	text-align:justify;
+}
+/* detail && language */
+.detail-lang h4, .skill h4, .characteristic h4, .interest h4 {
+	padding-bottom: 30px;
+	color: #a4a4a4;
+}
+.detail-lang table {
+	font-size:14px;
+	vertical-align: middle;
+}
+.detail-lang table tr {
+	height: 30px;
+}
+.detail-lang table tr td:first-child {
+	width: 35%;
+}
+.detail-lang div i {
+	padding-right: 10px;
+	color:  #c0e3e7;
+}
+.detail-lang p:not(:nth-child(2)) {
+	padding-top: 10px;
+}
+/* skill */
+.skill .progress {
+	height: 10px;
+}
+.skill .other-skill {
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+/* characteristic && certificate */
+.characteristic .char-cert li {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.characteristic .char-cert li:last-child {
+	padding-bottom: 0px;
+}
+.characteristic .char-cert li i {
+	padding-right: 30px;
+}
+/* interest */
+.interest .interest-list span {
+	font-size:  16px;
+	margin-right: 10px;
+}
+.interest .interest-list li:not(:last-child) {
+	padding-bottom: 30px;
+}
+/* experience && education */
+.timeline-me-shortcontent, .timeline-me-fullcontent {
+	background-color: #f3f3f3;
+}
+.timeline-me-right .timeline-me-shortcontent, .timeline-me-fullcontent {
+	text-align:justify;
+}
+.timeline-me-left .timeline-me-shortcontent, .timeline-me-fullcontent {
+	text-align: justify;
+}
+#timeline-2 .timeline-me-left .timeline-me-shortcontent, .timeline-me-fullcontent {
+	text-align: right;
+}
+.custom-show-btn-right {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: #a4a4a4;
+}
+.custom-show-btn-left {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  color: #a4a4a4;
+}
+/* paper */
+.paper ol {
+	padding-left: 15px;
+	text-align: justify;
+	text-size: 16px;
+}
+.paper ol li:not(:last-child) {
+	padding-bottom: 10px;
+}
+/* show */
+.show-left {
+	padding-right:0px;
+}
+.show-right {
+	padding-left: 0px;
+}
+.portfolio-item {
+  position: relative;
+}
+.portfolio-item .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(64, 109, 164, 0.9);
+}
+.portfolio-item .info {
+  position: absolute;
+  top: 50%;
+  margin-top: -49px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.portfolio-item .media-wrapper {
+  overflow: hidden;
+}
+.portfolio-item .title {
+  font-family: inherit;
+  color: #fff;
+}
+.portfolio-item .brief-description {
+  font-weight: 300;
+}
+.portfolio-item .overlay, .portfolio-item .info {
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.portfolio-item img {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  max-width: 100%;
+  border: 1px solid #fff;
+}
+.portfolio-item:hover img {
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+.portfolio-item:hover .overlay, .portfolio-item:hover .info {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  z-index: 1;
+}
+.portfolio-item a, .portfolio-item a:hover, .portfolio-item a:focus {
+  color: #fff;
+}
+.portfolio-item .btn {
+  background-color: #4474af;
+  border: 1px solid #396192;
+}
+.portfolio-item .btn:hover, .portfolio-item .btn:focus {
+  color: #fff;
+  background-color: #406da4;
+}
+
+/*favor*/
+.steps {		/*这块设置成圆形，即最大的那个圆，边界即为一圈的线*/
+  margin: 30px auto 0 auto;
+  list-style: none;
+  width: 20em;
+  z-index: 0;
+  position: relative;
+  color: #373232;		/*中间文字*/
+  border: 2px solid #373232;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8%;
+}
+.steps__icon {
+  padding-top:0px;
+  width: 70%;
+}
+.steps__description {
+  padding: 0 auto;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 3%;
+}
+.steps__description a {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #373232;
+  border-radius: 0.2em;
+  color: #373232;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2% 3%;
+  margin-top: 5%;
+  font-size: 10px;
+}
+.steps__description a:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #373232;
+}
+
+.is-active a {
+  font-size: 20px !important;
+  background: #373232 !important;
+}
+
+#steps-menu ul li {
+  -moz-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
+  border-left: 115px solid transparent;		/*控制外圈小圆的位置*/
+  border-top: 1px solid transparent;
+  font-size: 11px;
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform-origin: 0 0;
+}
+#steps-menu ul li:after {
+  content: " ";
+  width: 0.7em;
+  height: 0.4em;
+  margin-left: -0.14em;
+  margin-top: -2.1em;
+  position: absolute;
+  font-size: 11px;
+  background-size: 100%;
+  background-color: transparent;
+  transform: rotate(-29deg);
+  background-repeat: no-repeat;
+}
+#steps-menu ul li a {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #c0e3e7;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  height: 2em;
+  width: 2em;
+  font-size: 1.6em;
+  line-height: 2;
+  box-shadow: 0 0 0 0 transparent;
+}
+#steps-menu ul li a:hover {
+  background: #373232;
+  box-shadow: 0 0 0px 3px #373232;
+}
+.step-1 ul li:nth-of-type(1) {
+  transform: rotate(-97deg);
+}
+.step-1 ul li:nth-of-type(1) a {
+  transform: rotate(97deg);
+}
+
+.step-2 ul li:nth-of-type(1) {
+  transform: rotate(-157deg);
+}
+.step-2 ul li:nth-of-type(1) a {
+  transform: rotate(157deg);
+}
+
+.step-3 ul li:nth-of-type(1) {
+  transform: rotate(-217deg);
+}
+.step-3 ul li:nth-of-type(1) a {
+  transform: rotate(217deg);
+}
+
+.step-4 ul li:nth-of-type(1) {
+  transform: rotate(-277deg);
+}
+.step-4 ul li:nth-of-type(1) a {
+  transform: rotate(277deg);
+}
+
+.step-5 ul li:nth-of-type(1) {
+  transform: rotate(-337deg);
+}
+.step-5 ul li:nth-of-type(1) a {
+  transform: rotate(337deg);
+}
+
+.step-6 ul li:nth-of-type(1) {
+  transform: rotate(-397deg);
+}
+.step-6 ul li:nth-of-type(1) a {
+  transform: rotate(397deg);
+}
+
+.step-1 ul li:nth-of-type(2) {
+  transform: rotate(-37deg);
+}
+.step-1 ul li:nth-of-type(2) a {
+  transform: rotate(37deg);
+}
+
+.step-2 ul li:nth-of-type(2) {
+  transform: rotate(-97deg);
+}
+.step-2 ul li:nth-of-type(2) a {
+  transform: rotate(97deg);
+}
+
+.step-3 ul li:nth-of-type(2) {
+  transform: rotate(-157deg);
+}
+.step-3 ul li:nth-of-type(2) a {
+  transform: rotate(157deg);
+}
+
+.step-4 ul li:nth-of-type(2) {
+  transform: rotate(-217deg);
+}
+.step-4 ul li:nth-of-type(2) a {
+  transform: rotate(217deg);
+}
+
+.step-5 ul li:nth-of-type(2) {
+  transform: rotate(-277deg);
+}
+.step-5 ul li:nth-of-type(2) a {
+  transform: rotate(277deg);
+}
+
+.step-6 ul li:nth-of-type(2) {
+  transform: rotate(-337deg);
+}
+.step-6 ul li:nth-of-type(2) a {
+  transform: rotate(337deg);
+}
+
+.step-1 ul li:nth-of-type(3) {
+  transform: rotate(23deg);
+}
+.step-1 ul li:nth-of-type(3) a {
+  transform: rotate(-23deg);
+}
+
+.step-2 ul li:nth-of-type(3) {
+  transform: rotate(-37deg);
+}
+.step-2 ul li:nth-of-type(3) a {
+  transform: rotate(37deg);
+}
+
+.step-3 ul li:nth-of-type(3) {
+  transform: rotate(-97deg);
+}
+.step-3 ul li:nth-of-type(3) a {
+  transform: rotate(97deg);
+}
+
+.step-4 ul li:nth-of-type(3) {
+  transform: rotate(-157deg);
+}
+.step-4 ul li:nth-of-type(3) a {
+  transform: rotate(157deg);
+}
+
+.step-5 ul li:nth-of-type(3) {
+  transform: rotate(-217deg);
+}
+.step-5 ul li:nth-of-type(3) a {
+  transform: rotate(217deg);
+}
+
+.step-6 ul li:nth-of-type(3) {
+  transform: rotate(-277deg);
+}
+.step-6 ul li:nth-of-type(3) a {
+  transform: rotate(277deg);
+}
+
+.step-1 ul li:nth-of-type(4) {
+  transform: rotate(83deg);
+}
+.step-1 ul li:nth-of-type(4) a {
+  transform: rotate(-83deg);
+}
+
+.step-2 ul li:nth-of-type(4) {
+  transform: rotate(23deg);
+}
+.step-2 ul li:nth-of-type(4) a {
+  transform: rotate(-23deg);
+}
+
+.step-3 ul li:nth-of-type(4) {
+  transform: rotate(-37deg);
+}
+.step-3 ul li:nth-of-type(4) a {
+  transform: rotate(37deg);
+}
+
+.step-4 ul li:nth-of-type(4) {
+  transform: rotate(-97deg);
+}
+.step-4 ul li:nth-of-type(4) a {
+  transform: rotate(97deg);
+}
+
+.step-5 ul li:nth-of-type(4) {
+  transform: rotate(-157deg);
+}
+.step-5 ul li:nth-of-type(4) a {
+  transform: rotate(157deg);
+}
+
+.step-6 ul li:nth-of-type(4) {
+  transform: rotate(-217deg);
+}
+.step-6 ul li:nth-of-type(4) a {
+  transform: rotate(217deg);
+}
+
+.step-1 ul li:nth-of-type(5) {
+  transform: rotate(143deg);
+}
+.step-1 ul li:nth-of-type(5) a {
+  transform: rotate(-143deg);
+}
+
+.step-2 ul li:nth-of-type(5) {
+  transform: rotate(83deg);
+}
+.step-2 ul li:nth-of-type(5) a {
+  transform: rotate(-83deg);
+}
+
+.step-3 ul li:nth-of-type(5) {
+  transform: rotate(23deg);
+}
+.step-3 ul li:nth-of-type(5) a {
+  transform: rotate(-23deg);
+}
+
+.step-4 ul li:nth-of-type(5) {
+  transform: rotate(-37deg);
+}
+.step-4 ul li:nth-of-type(5) a {
+  transform: rotate(37deg);
+}
+
+.step-5 ul li:nth-of-type(5) {
+  transform: rotate(-97deg);
+}
+.step-5 ul li:nth-of-type(5) a {
+  transform: rotate(97deg);
+}
+
+.step-6 ul li:nth-of-type(5) {
+  transform: rotate(-157deg);
+}
+.step-6 ul li:nth-of-type(5) a {
+  transform: rotate(157deg);
+}
+
+.step-1 ul li:nth-of-type(6) {
+  transform: rotate(203deg);
+}
+.step-1 ul li:nth-of-type(6) a {
+  transform: rotate(-203deg);
+}
+
+.step-2 ul li:nth-of-type(6) {
+  transform: rotate(143deg);
+}
+.step-2 ul li:nth-of-type(6) a {
+  transform: rotate(-143deg);
+}
+
+.step-3 ul li:nth-of-type(6) {
+  transform: rotate(83deg);
+}
+.step-3 ul li:nth-of-type(6) a {
+  transform: rotate(-83deg);
+}
+
+.step-4 ul li:nth-of-type(6) {
+  transform: rotate(23deg);
+}
+.step-4 ul li:nth-of-type(6) a {
+  transform: rotate(-23deg);
+}
+
+.step-5 ul li:nth-of-type(6) {
+  transform: rotate(-37deg);
+}
+.step-5 ul li:nth-of-type(6) a {
+  transform: rotate(37deg);
+}
+
+.step-6 ul li:nth-of-type(6) {
+  transform: rotate(-97deg);
+}
+.step-6 ul li:nth-of-type(6) a {
+  transform: rotate(97deg);
+}
+.step-content {
+  display: none;
+}
+#step-1 {
+  display: block;
+}
+
+@media (min-width: 576px) {
+	.padding-left-30 {
+		padding-left: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.padding-left-30 {
+		padding-left: 15px;
+	}
+}
+
+/* ------------------------- Personal End -------------------------*/
