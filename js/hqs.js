@@ -188,10 +188,34 @@ $(document).ready( function() {
 	}
 });
 
-function toast(){
+function qq(){
 	$.toast({
 		heading: 'Tip',
 		text: 'My QQ number is 674485712.',
+		position: 'top-right',
+		bgColor: '#444444',
+		textColor: 'white',
+		icon: 'info',
+		stack: false
+	})
+}
+
+function weixin(){
+	$.toast({
+		heading: 'Tip',
+		text: 'My weixin number is shunzi071256.',
+		position: 'top-right',
+		bgColor: '#444444',
+		textColor: 'white',
+		icon: 'info',
+		stack: false
+	})
+}
+
+function weibo(){
+	$.toast({
+		heading: 'Tip',
+		text: '微博昵称 “研久升宝宝” .',
 		position: 'top-right',
 		bgColor: '#444444',
 		textColor: 'white',
