@@ -158,7 +158,7 @@ $(document).ready( function() {
 		 series: [{
 			 type: 'wordCloud',
 			 gridSize: 1,
-			 sizeRange: [11, 18],
+			 sizeRange: [11, 17],
 			 rotationRange: [0, 90],
 			 rotationStep: 45,
 			 maskImage: maskImage,
