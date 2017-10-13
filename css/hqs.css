@@ -600,6 +600,12 @@
 	.padding-right-30 {
 		padding-bottom: 15px;
 	}
+	.show-right {
+		padding-left: 15px;
+	}
+	.show-left{
+		padding-right: 15px;
+	}
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -609,6 +615,12 @@
 	.padding-right-30 {
 		padding-bottom: 15px;
 	}
+	.show-right {
+		padding-left: 15px;
+	}
+	.show-left{
+		padding-right: 15px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -617,6 +629,12 @@
 	}
 	.padding-right-30 {
 		padding-bottom: 15px;
+	}
+	.show-right {
+		padding-left: 15px;
+	}
+	.show-left{
+		padding-right: 15px;
 	}
 }
 
