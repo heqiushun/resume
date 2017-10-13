@@ -173,7 +173,7 @@ hr {
 }
 .navbar-default {
   background-color: #fff;
-  border-bottom: 2px solid #e7e7e7;
+  border-bottom: none;
   border-top: none;
 }
 .navbar-default .navbar-toggle {
@@ -222,6 +222,11 @@ hr {
 .navbar-fixed-top .navbar-nav {
   margin-right: -10px;
 }
+
+.navbar-fixed-top .navbar-nav {
+  margin-right: -10px;
+}
+
 .navbar-nav .dropdown-menu {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;

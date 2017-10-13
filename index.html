@@ -16,7 +16,7 @@
 	<link href="css/jquery.timelineMe.css" rel="stylesheet" type="text/css">
 	<link href="css/jquery.toast.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-	<link href="css/personal/hqs.css" rel="stylesheet" type="text/css">
+	<link href="css/hqs.css" rel="stylesheet" type="text/css">
 	<!-- InstanceEndEditable -->
     <!-- IE 9 Fallback-->
     <!--[if IE 9]>
@@ -29,6 +29,40 @@
 <body>
     <!-- WRAPPER -->
     <div class="wrapper"  style="background: url(img/bg.jpg);background-repeat:repeat;">
+		<!-- NAVBAR -->
+        <nav class="navbar navbar-default " role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a href="index.html" class="navbar-brand navbar-logo">
+						<!--<img src="img/logo/repute-logo-nav.png" alt="Repute Lite - Free Bootstrap Business Template">-->
+                        <i class="fa fa-handshake-o"></i> <span style="font-family:hwcy;font-weight:bolder;font-size:25px">HQS</span>
+                    </a>
+                </div>
+                <!-- MAIN NAVIGATION -->
+                <div id="main-nav" class="navbar-collapse collapse navbar-mega-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown active">
+                            <a href="#detail-lang" class="self">简介</a>
+                        </li>
+						<li class="dropdown">
+                            <a href="#experience" class="stu">科研</a>
+                        </li>
+						<li class="dropdown">
+                            <a href="#education" class="edu">教育</a>
+                        </li>
+						<li class="dropdown">
+                            <a href="#paper" class="pap">文章</a>
+                        </li>
+                        <li><a href="#" class="special-menu-item" target="_blank"><i class="fa fa-home"></i></a></li>
+                    </ul>
+                </div>
+                <!-- END MAIN NAVIGATION -->
+            </div>
+        </nav>
 		<!-- InstanceBeginEditable name="main" -->
         <!-- PAGE CONTENT -->
         <div class="page-content">
@@ -36,9 +70,9 @@
 				<div class="row">
 					<!-- Personal Left-->
 					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs personal-left">
-						<div class="personal-box" style="background: url(img/personal/pbg1.png);background-repeat:repeat;">
+						<div class="personal-box" style="background: url(img/pbg.png);background-repeat:repeat;">
 							<div class="personal-img">
-								<img class="img-responsive" src="img/personal/me.jpg" alt="">
+								<img class="img-responsive" src="img/me.jpg" alt="">
 							</div>
 							<div class="personal-info">
 								<h3>何秋顺</h3>
@@ -63,7 +97,7 @@
 							<!-- End Introduction -->
 							<hr />
 							<!-- Information && Language -->
-							<div class="detail-lang">
+							<div class="detail-lang" id="detail-lang">
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-30">
 										<h4>个人信息</h4>
@@ -77,7 +111,6 @@
 												<tr><td><strong>电话</strong><td><td>1571151573</td></tr>
 											</tbody>
 										</table>
-										
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-left-30">
 										<h4>语言</h4>
@@ -119,7 +152,7 @@
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 other-skill">
 											<div id="radial2"></div>
-											<p>编程语言 (Java/C)</p>
+											<p>编程语言 (Java)</p>
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 other-skill">
 											<div id="radial3"></div>
@@ -153,50 +186,45 @@
 									</div>
 								</div>
 							</div>
+							<hr/>
 							-->
 							<!-- End Characteristic -->
-							<hr/>
 							<!-- Interest -->
 							<div class="interest">
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-30 hidden-xs">
 										<h4>兴趣</h4>
-										<ul class="interest-list">
-											<li><span class="label label-success">读书  <i class="fa fa-battery-three-quarters"></i></span></li>
-											<li><span class="label label-info">旅游  <i class="fa fa-plane"></i></span></li>
-											<li><span class="label label-warning">吃  <i class="fa fa-cutlery"></i></span></li>
-											<li><span class="label label-danger">煲剧  <i class="fa fa-television"></i></span></li>
-										</ul>
+										<div id="picture" style="height:300px"></div>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-left-30 hidden-xs">
 										<h4>追过的美剧</h4>
 										<div id="steps" class="steps">
-										  <div id="step-1" class="step-content"><img src="img/personal/bbt1.png" class="steps__icon">
+										  <div id="step-1" class="step-content"><img src="img/bbt.png" class="steps__icon">
 											<div class="steps__description">Knoc..knock..knock,Amy.
 											  <div id="read-more"><a href="">Big Bang Theory</a></div>
 											</div>
 										  </div>
-										  <div id="step-2" class="step-content"><img src="img/personal/ta2.png" class="steps__icon">
+										  <div id="step-2" class="step-content"><img src="img/ta.png" class="steps__icon">
 											<div class="steps__description">Hail HYDRA.
 											  <div id="read-more"><a href="">Agents of S.H.I.E.L.D.</a></div>
 											</div>
 										  </div>
-										  <div id="step-3" class="step-content"><img src="img/personal/got2.png" class="steps__icon">
+										  <div id="step-3" class="step-content"><img src="img/got.png" class="steps__icon">
 											<div class="steps__description">Night gathers
 											  <div id="read-more"><a href="">A Song of Ice and Fire</a></div>
 											</div>
 										  </div>
-										  <div id="step-4" class="step-content"><img src="img/personal/s8.png" class="steps__icon">
+										  <div id="step-4" class="step-content"><img src="img/s8.png" class="steps__icon">
 											<div class="steps__description">The bed keeps you in the slum.
 											  <div id="read-more"><a href="">Sense 8</a></div>
 											</div>
 										  </div>
-										  <div id="step-5" class="step-content"><img src="img/personal/2bg.png" class="steps__icon">
+										  <div id="step-5" class="step-content"><img src="img/2bg.png" class="steps__icon">
 											<div class="steps__description">He's a vegetable and a fruit.
 											  <div id="read-more"><a href="">2 Broke Girls</a></div>
 											</div>
 										  </div>
-										  <div id="step-6" class="step-content"><img src="img/personal/sl.png" class="steps__icon">
+										  <div id="step-6" class="step-content"><img src="img/sl.png" class="steps__icon">
 											<div class="steps__description">Live and let live.
 											  <div id="read-more"><a href="">SHERLOCK</a></div>
 											</div>
@@ -220,14 +248,14 @@
 						<br/>
 						<div class="personal-right  bg-white">
 							<!-- Study -->
-							<div class="experience">
+							<div class="experience" id="experience">
 								<h2><strong>科研经历</strong></h2>
 								<div id="timeline-1" type="text"></div>
 							</div>
 							<!-- End Study -->
 							<hr/>
 							<!-- School -->
-							<div class="education">
+							<div class="education" id="education">
 								<h2><strong>教育</strong></h2>
 								<div id="timeline-2" type="text"></div>
 							</div>
@@ -236,7 +264,7 @@
 						<br/>
 						<div class="personal-right  bg-white">
 							<!-- Paper -->
-							<div class="paper">
+							<div class="paper" id="paper">
 								<h2><strong>已发表文章</strong></h2>
 								<ol>
 									<li>Li-Hong Huang<sup>#</sup>, Qiu-Shun He<sup>#</sup>, Ke Liu, et al. (2017) ADReCS-Target: target profiles for aiding drug safety research and application. Nucleic Acids Research.</li>
@@ -260,7 +288,7 @@
 												<p class="brief-description">Photography</p>
 											</div>
 											<div class="media-wrapper">
-												<img src="img/personal/1.jpg" alt="Item Thumbnail" />
+												<img src="img/1.jpg" alt="Item Thumbnail" />
 											</div>
 										</div>
 										<div class="portfolio-item">
@@ -270,7 +298,7 @@
 												<p class="brief-description">Photography</p>
 											</div>
 											<div class="media-wrapper">
-												<img src="img/personal/2.jpg" alt="Item Thumbnail" />
+												<img src="img/2.jpg" alt="Item Thumbnail" />
 											</div>
 										</div>
 									</div>
@@ -282,7 +310,7 @@
 												<p class="brief-description">Product Design</p>
 											</div>
 											<div class="media-wrapper">
-												<img src="img/personal/3.jpg" alt="Item Thumbnail" />
+												<img src="img/3.jpg" alt="Item Thumbnail" />
 											</div>
 										</div>
 									</div>
@@ -322,20 +350,9 @@
 	<script src="js/jquery.timelineMe.js"></script>
 	<script src="js/jquery.toast.js"></script>
     <script src="js/custom.js"></script>
-	<script src="js/personal/hqs.js"></script>
-	<script>
-	function toast(){
-		$.toast({
-			heading: 'Warning',
-			text: 'Use the predefined ones, or specify a custom position object.',
-			position: 'top-right',
-			bgColor: '#444444',
-			textColor: 'white',
-			icon: 'info',
-			stack: false
-		})
-		}
-	</script>
+	<script src="js/hqs.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/echarts-wordcloud.min.js"></script>
 	<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd -->

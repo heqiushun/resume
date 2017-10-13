@@ -23,6 +23,35 @@ $(document).ready( function() {
 	if (isMobileWebkit) {
 		$('html').addClass('mobile');
 	}
+	// ease click
+	$('.self').on('click', function(event){
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($(this).attr("href")).offset().top
+		}, 1500, 'easeInOutExpo');
+		return false;
+	});
+	$('.stu').on('click', function(event){
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($(this).attr("href")).offset().top
+		}, 1500, 'easeInOutExpo');
+		return false;
+	});
+	$('.edu').on('click', function(event){
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($(this).attr("href")).offset().top
+		}, 1500, 'easeInOutExpo');
+		return false;
+	});
+	$('.pap').on('click', function(event){
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop: $($(this).attr("href")).offset().top
+		}, 1500, 'easeInOutExpo');
+		return false;
+	});
 	// goto Top
 	$('.js-gotop').on('click', function(event){
 		event.preventDefault();

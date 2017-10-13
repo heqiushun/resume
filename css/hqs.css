@@ -593,16 +593,32 @@
   display: block;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 479px) {
 	.padding-left-30 {
 		padding-left: 15px;
+	}
+	.padding-right-30 {
+		padding-bottom: 15px;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
 	.padding-left-30 {
 		padding-left: 15px;
 	}
+	.padding-right-30 {
+		padding-bottom: 15px;
+	}
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.padding-left-30 {
+		padding-left: 15px;
+	}
+	.padding-right-30 {
+		padding-bottom: 15px;
+	}
+}
+
 
 /* ------------------------- Personal End -------------------------*/
