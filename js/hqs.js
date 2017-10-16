@@ -43,14 +43,14 @@ $(document).ready( function() {
 		},
 		{
 		  type: 'smallItem',
-		  label: '<span style="color:#dd6b66">实现肺炎克雷伯氏菌SNP分型方法</span>&nbsp;&nbsp;',
+		  label: '<span style="color:#dd6b66">肺炎克雷伯氏菌SNP分型方法</span>&nbsp;&nbsp;',
 		  shortContent: '基于现有的多位点序列分型（MLST）方法，提出更快捷和方便的SNP分型方法，并简化和完善pipeline。',
 		  forcePosition: 'left'
 		},
 		{
 		  type: 'smallItem',
-		  label: '<span style="color:#759aa0">染色体变异遗传病探针筛选</span>&nbsp;&nbsp;',
-		  shortContent: '利用序列比对和多重条件筛选，寻找缺失片段的同源序列，设计筛查探针。',
+		  label: '<span style="color:#759aa0">染色体变异遗传病产前诊断</span>&nbsp;&nbsp;',
+		  shortContent: '运用探针溶解曲线技术，建立一种快速、经济、准确、特异性好的分子诊断方法。主要负责：利用序列比对和多重条件筛选，寻找微缺失/微重复片段的同源序列，以设计筛查探针。',
 		  forcePosition: 'right'
 		},
 		{
